@@ -69,7 +69,7 @@ const webhook = async (req, res, next) => {
         const account = web3.eth.accounts.privateKeyToAccount(process.env.PRIVATE_KEY);
         web3.eth.accounts.wallet.add(account);
 
-        const tokenContract = new web3.eth.Contract(TOKEN_ABI, TOKEN_ADDRESS);
+        const tokenContract = new web3.eth.Contract(TOKEN_ABI, TOKEN_ADDRESS_Pelito);
 
         const value = web3.utils.toWei(amount.toString(), 'mwei'); // or change unit if needed
 
@@ -80,7 +80,7 @@ const webhook = async (req, res, next) => {
 
         const txData = {
           from: account.address,
-          to: TOKEN_ADDRESS,
+          to: TOKEN_ADDRESS_Pelito,
           data: tx.encodeABI(),
           gas,
           gasPrice
@@ -131,7 +131,7 @@ var connectDB = require('./utils/db');
 connectDB()
 
 var custom_routes = require('./routes/index');
-const { RPC_URL, TOKEN_ADDRESS, TOKEN_ABI } = require('./constant');
+const { RPC_URL, TOKEN_ADDRESS, TOKEN_ABI , TOKEN_ADDRESS_Pelito} = require('./constant');
 custom_routes(app);
 
 
