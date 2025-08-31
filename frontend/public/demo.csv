@@ -1,0 +1,8 @@
+id,type,title,description,value,trend,model,confidence,accuracy,dataPoints
+earnings,earnings,Projected Earnings (Next Month),AI-powered revenue forecasting using LSTM neural networks,$14200,+85% confidence,LSTM Neural Network,85,88,90
+churn,churn,Client Churn Risk Analysis,ML-based churn prediction using behavioral patterns and RFM analysis,12,12 High Risk,Neural Network Classifier,78,82,150
+promotions,promotions,Smart Promotions for Slow Days,AI optimization algorithm for dynamic pricing and promotion timing,5,Opportunities,Optimization Algorithm,86,78,120
+trends,trends,Service Trend Analysis,Statistical trend detection with exponential smoothing and market analysis,7%,Top Trend,Statistical Analysis,80,85,45
+hours,hours,Revenue Impact from Adjusting Hours,AI simulation models for what-if business hour scenarios,$3450,Monthly Gain,Neural Network Simulator,82,79,60
+ltv,ltv,Client Lifetime Value (LTV),Predictive LTV modeling using RFM analysis and retention prediction,$4980,Top Client,Predictive Analytics,88,87,200
+
